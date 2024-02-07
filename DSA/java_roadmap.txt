@@ -1,0 +1,24 @@
+basic hello world
+learn about System.out.println()
+learn about different types of variables(String,Integer)
+do some basic sum,substraction,multiplication etc..problems
+Learn how to take input using Scanner Class
+learn about conditionals (if,else,else if)
+do problems
+1)program to find a number is  Even or Odd?
+2)program to find a number is multiples of a n given by user
+3)program to find the greatest number among three numbers
+4)program to find out whether a given year is a leap year or not:
+5)program to convert temperature from Fahrenheit to Celsius and Celsius to Fahrenheit
+6)program to check the sign of a given number
+Learn About Loops
+1)while
+2)do while(optional)
+3)for loop
+learn syntax and concept about loops
+do problems on loops
+https://www.w3resource.com/c-programming-exercises/for-loop/index.php
+learn about static,local and global variables
+learn about methods(static methods etc)
+learn about Exception Handling 
+Learn about ObjectOrientedProgramming(Important)
