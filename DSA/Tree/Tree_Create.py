@@ -5,12 +5,18 @@ class Node:
         self.right=None
     def __str__(self):
     	return f"{self.data}"
-root=Node(1)
-node1=Node(2)
-node2=Node(3)
-root.left=node1
-root.right=node2
-left_1=Node(4)
-right_1=Node(5)
-node1.left=left_1
-node1.right=right_1
+n=int(input("enter number of Nodes"))-1
+value=int(input("enter the root"))
+root=Node(value)
+while n!=0:
+    left=int(input("enter leftNode of {root.data}"))
+    right=int(input("enter rightNode of {root.data}"))
+    if left is not None:
+        root.left=Node(left)
+        n-=1
+    if right is not None:
+        root.right=Node(right)
+        n-=1
+    
+    
+

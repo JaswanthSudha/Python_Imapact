@@ -16,17 +16,28 @@ def insertNode(rootNode,nodeValue):
 			rootNode.right=BSTNode(nodeValue)
 		else:
 			insertNode(rootNode.right,nodeValue)
-	return "node inserted Successfully"
-def insert(rootNode,nodeValue):
-	if rootNode is None:
-		rootNode.data=nodeValue
+def fullBinary(rootNode):
+	if rootNode.left is None and rootNode.right is None:
+		return True
+	if rootNode.left is not None and rootNode.right is None:
+		return False
+	if rootNode.left is None and rootNode.right is not None:
+		return False
+	left=fullBinary(rootNode.left)
+	right=fullBinary(rootNode.right)
+	if left==True and right==True:
+		return True
 	else:
-		pass
-rootNode=BSTNode(None)
-insertNode(rootNode,70)
-insertNode(rootNode,90)
-insertNode(rootNode,60)
-insertNode(rootNode,45)
-insertNode(rootNode,100)
-insertNode(rootNode,50)
-insertNode(rootNode,80)
+		return False
+test=int(input())
+for _ in range(test):
+	rootNode=BSTNode(None)
+	array=list(map(int,input().split()))
+	for i in range(len(array)):
+		insertNode(rootNode,array[i])
+	ans=fullBinary(rootNode)
+	if ans==True:
+		print("Yes")
+	else:
+		print("No")
+	print("")

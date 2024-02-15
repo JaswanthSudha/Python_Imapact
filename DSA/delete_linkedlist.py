@@ -22,7 +22,11 @@ class LinkedList:
             ptr=ptr.next
             
 linked_list=LinkedList()
-linked_list.insert(10)
-linked_list.insert(20)
-linked_list.insert(30)
+# linked_list.insert(10)
+# linked_list.insert(20)
+# linked_list.insert(30)
+arr=[10,20,30,40,50]
+for i in arr:
+    linked_list.insert(i)
+linked_list.print()
 print("done")

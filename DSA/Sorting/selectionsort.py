@@ -1,17 +1,29 @@
-list=[4,21,1,9,2,67,45,3,0]
-index=0
-index_j=-1
-for i in range(len(list)):
-    min_value=list[i]
-    for j in range(index,len(list)):
-        if min_value>list[j]:
-            min_value=list[j]
-            index_j=j
-    if index_j!=-1:
-        list[i],list[index_j]=list[index_j],list[i]
-    index+=1
-    index_j=-1
-print(list)
+list=[]
+def function(arr):
+    new_arr=arr.copy()
+    for i in range(len(arr)):
+        max=arr[i]
+        index_j=-1
+        for j in range(i+1,len(arr)):
+            if arr[j]>=max:
+                max=arr[j]
+                index_j=j
+                element=arr[index_j]
+        if index_j!=-1:
+            # print(new_arr[i])
+            # print(new_arr.index(element))
+            print(new_arr.index(new_arr[index_j]))
+            arr[i],arr[index_j]=arr[index_j],arr[i]
+            # print(new_arr.index(new_arr[index_j]))
+            
+            
+    print(arr)
+    # print(new_arr)
+function(list)
+
+            
+
+# print(list)
         
 
 
