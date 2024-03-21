@@ -1,9 +1,11 @@
 class A:
-    def m(self):
-        print("m of A called")
-class B:
-    def m(self):
-        print("m of B called")
-class C(A,B):
+    def m1(self):
+        return "a of m"
+class B(A):
     pass
-print(C.__mro__)
+class C(A):
+    pass
+class D(C,B):
+    pass
+obj=D()
+print(obj.m1())
