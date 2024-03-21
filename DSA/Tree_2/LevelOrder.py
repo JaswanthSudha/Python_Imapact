@@ -1,4 +1,4 @@
-from Queue import queue
+from Graph.Queue import queue
 def levelOrder(rootNode):
 	if root is None:
 		return "No Tree"

@@ -1,5 +1,5 @@
 
-from Queue import queue
+from Graph.Queue import queue
 def LevelOrder(rootNode):
 	if rootNode is None:
 		return
